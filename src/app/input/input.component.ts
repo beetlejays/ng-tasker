@@ -6,7 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./input.component.css']
 })
 export class InputComponent {
+ inputTask = "bruce"
 
+ myEvent(e: string) {
+  console.log(e)
+ }
 
+ onSaveTask(inputTask: string)  {
+  console.log(inputTask)
+ }
 
 }
