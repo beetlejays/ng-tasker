@@ -1,7 +1,7 @@
 <div class="task-input">
   <label for="task">Your Task</label>
   <input
-    (keyup)="myEvent(task.value)"
+    (keyup.enter)="myEvent(task.value)"
     class="task-input-form"
     type="text"
     #task
