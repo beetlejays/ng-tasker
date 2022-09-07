@@ -1,10 +1,10 @@
 <div class="task-input">
   <label for="task">Your Task</label>
   <input
-    (keyup)="myEvent('keyup yeah')"
+    (keyup)="myEvent(task.value)"
     class="task-input-form"
     type="text"
-    id="task"
+    #task
   />
   <button (click)="onSaveTask('this is click')">Save</button>
 </div>
