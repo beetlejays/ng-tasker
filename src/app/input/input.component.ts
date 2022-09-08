@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class InputComponent {
  inputTask: string = ""
 
- 
+ onSaveTask() {
+  console.log("saved")
+ }
 
 }
