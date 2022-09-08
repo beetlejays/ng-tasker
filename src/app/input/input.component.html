@@ -1,7 +1,7 @@
 <div class="task-input">
   <label for="task">Your Task</label>
 
-  <input class="task-input-form" type="text" #task />
-
-  <button (click)="onSaveTask()">Save</button>
+  <input [(ngModel)]="inputTask" class="task-input-form" type="text" #task />
+  {{ inputTask }}
+  <button (click)="onSaveTask(inputTask)">Save</button>
 </div>

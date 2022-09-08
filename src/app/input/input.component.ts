@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./input.component.css']
 })
 export class InputComponent {
- inputTask = ""
+ inputTask: string = ""
 
- onSaveTask()  {
+ onSaveTask(inputTask: string)  {
   console.log("this works")
  }
 
