@@ -8,8 +8,11 @@ import { Component } from '@angular/core';
 export class InputComponent {
  inputTask: string = ""
 
+ inputTasks: string[] = []
+
  onSaveTask() {
-  console.log("saved")
+  this.inputTasks.push(this.inputTask)
+  console.log(this.inputTasks)
  }
 
 }
