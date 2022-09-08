@@ -2,6 +2,5 @@
   <label for="task">Your Task</label>
 
   <input [(ngModel)]="inputTask" class="task-input-form" type="text" #task />
-  {{ inputTask }}
-  <button (click)="onSaveTask(inputTask)">Save</button>
+  <p>You are typing: {{ inputTask }}</p>
 </div>
