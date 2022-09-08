@@ -12,7 +12,7 @@ export class InputComponent {
 
  onSaveTask() {
   this.inputTasks.push(this.inputTask)
-  console.log(this.inputTasks)
- }
+  this.inputTask = ""
+  }
 
 }

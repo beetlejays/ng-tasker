@@ -5,4 +5,11 @@
   <button (click)="onSaveTask()">save task</button>
 
   <p>You are typing: {{ inputTask }}</p>
+  <table>
+    <tr *ngFor="let task of inputTasks">
+      <td>
+        {{ task }}
+      </td>
+    </tr>
+  </table>
 </div>
