@@ -6,14 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./input.component.css']
 })
 export class InputComponent {
- inputTask = "bruce"
+ inputTask: string = ""
 
- myEvent(e: string) {
-  console.log(e)
- }
+ inputTasks: string[] = []
 
- onSaveTask(inputTask: string)  {
-  console.log(inputTask)
- }
+ onSaveTask() {
+  this.inputTasks.push(this.inputTask)
+  this.inputTask = ""
+  }
 
 }
